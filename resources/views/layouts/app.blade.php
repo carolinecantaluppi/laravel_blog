@@ -9,11 +9,11 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/style.css">
         <title>Hello, world!</title>
     </head>
     <body>
-        @include('layouts.nav')             <!-- con include lo so esattamente quello file che voglio. -->
+        @include('layouts._nav')             <!-- con include lo so esattamente quello file che voglio. -->
         <div class="header">
             <h2>Blog Name</h2>
         </div>

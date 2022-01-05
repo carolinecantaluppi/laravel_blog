@@ -27,3 +27,7 @@ Route::get('/dove-siamo', function () {
     return view('dovesiamo');
 })->name('dove-siamo');
 
+// Route::get('/utente/{name}', function () {      
+//     return view('utente');
+// })->name('utente-nico');
+
