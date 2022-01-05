@@ -10,21 +10,25 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="./css/style.css">
-        <title>Hello, world!</title>
+        <title>Blog Name</title>
     </head>
     <body>
         @include('layouts._nav')             <!-- con include lo so esattamente quello file che voglio. -->
-        <div class="header">
-            <h2>Blog Name</h2>
+            
+        <div class="row">
+            <div class="mt-5">
+                <div class="col-12">
+                    <h2>Blog</h2>
+                </div>
+            </div>
         </div>
-
+        
         <div class="container">
             @yield('abbraccio')             <!-- con yield non lo so quale file viene neanché quale viene prima. -->
         </div>
 
-        <div class="footer">
-            <h2>Footer</h2>
-        </div>
+        @include('layouts.footer') 
+
         <!-- Optional JavaScript; choose one of the two! -->
 
         <!-- Option 1: Bootstrap Bundle with Popper -->

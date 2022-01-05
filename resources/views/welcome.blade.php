@@ -3,33 +3,33 @@
     <div class="row">
         <div class="leftcolumn">
             <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Dec 7, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
+                <h2>TITOLO</h2>
+                <h5>Descrizione del titolo, 5 gennaio 2022</h5>
+                <div class="fakeimg" style="height:200px;">Imagine</div>
+                <p>testo..</p>
             </div>
             <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
+                <h2>TITOLO</h2>
+                <h5>Descrizione del titolo, 3 gennaio 2022</h5>
+                <div class="fakeimg" style="height:200px;">Imagine</div>
+                <p>testo..</p>
             </div>
         </div>
         <div class="rightcolumn">
             <div class="card">
-                <h2>About Me</h2>
-                <div class="fakeimg" style="height:100px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                <h2>Su di me</h2>
+                <div class="fakeimg" style="height:100px;">Imagine</div>
+                <p>Testo Su di me in culpa qui officia deserunt mollit anim..</p>
             </div>
             <div class="card">
-                <h3>Popular Post</h3>
-                <div class="fakeimg">Image</div><br>
-                <div class="fakeimg">Image</div><br>
-                <div class="fakeimg">Image</div>
+                <h3>Post Populari</h3>
+                <div class="fakeimg">Imagine</div><br>
+                <div class="fakeimg">Imagine</div><br>
+                <div class="fakeimg">Imagine</div>
             </div>
             <div class="card">
                 <h3>Follow Me</h3>
-                <p>Some text..</p>
+                <p>testo..</p>
             </div>
         </div>
     </div>

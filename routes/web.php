@@ -27,7 +27,22 @@ Route::get('/dove-siamo', function () {
     return view('dovesiamo');
 })->name('dove-siamo');
 
-// Route::get('/utente/{name}', function () {      
-//     return view('utente');
-// })->name('utente-nico');
+Route::get('/utenti', function(){
+    // simuliamo un data base (db) di utenti:
+    $users = [
+        ["name"=>"Na", "lastname"=>'Ne', 'age'=>33],
+        ["name"=>"Ni", "lastname"=>'No', 'age'=>35],
+        ["name"=>"Nu", "lastname"=>'Ma', 'age'=>29],
+        ["name"=>"Me", "lastname"=>'Mi', 'age'=>29],
+        ["name"=>"Mo", "lastname"=>'Mu', 'age'=>25],
+        ["name"=>"Mo", "lastname"=>'Ka', 'age'=>21],
+    ]; // query all db che restituisce tutti gli utenti
+    return view('utenti',["users"=>$users]);
+})->name('utenti');
+
+Route::get('/utente/{name}', function ($name) {    
+    //dd($name);                                          dd = dumper_died. usare come check, dopo elimina.  
+    // passare il parametro alla vista
+    return view('utente', ["name"=>$name]);            // array associativo chiave->valore.
+})->where('name', '[A-Za-z]+')->name('utente');        // accetta solo lettere.
 

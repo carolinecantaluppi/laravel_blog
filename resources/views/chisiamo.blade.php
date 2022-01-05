@@ -1,22 +1,22 @@
 @extends('layouts.app')
 @section('abbraccio')
-    <div class="header">
-        <div class="rightcolumn">
+    <div class="row">
+        <div class="leftcolumn">
             <div class="card">
-                <h2>About Me</h2>
-                <div class="fakeimg" style="height:100px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                <h2>Su di me</h2>
+                <div class="fakeimg" style="height:100px;">Imagine</div>
+                <p>testo su di me in culpa qui officia deserunt mollit anim..</p>
             </div>
             <div class="card">
-                <h3>Popular Post</h3>
-                <div class="fakeimg">Image</div><br>
-                <div class="fakeimg">Image</div><br>
-                <div class="fakeimg">Image</div>
+                <h3>Post più Populari</h3>
+                <div class="fakeimg">Imagine</div><br>
+                <div class="fakeimg">Imagine</div><br>
+                <div class="fakeimg">Imagine</div>
             </div>
             <div class="card">
                 <h3>Follow Me</h3>
-                <p>Some text..</p>
+                <p>testo..</p>
             </div>
         </div>
-    </div>
+    </div>    
 @endsection
