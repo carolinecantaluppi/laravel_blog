@@ -2,10 +2,10 @@
 @section('abbraccio')
     <div class="row mt-5">
         <div class="col-12">
-            <h1>Ciao {{$name}}</h1>
+            <h1>Ciao {{$user['name']}} {{$user['lastname']}}</h1>
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-5">
         <div class="leftcolumn">
             <div class="card">
                 <h2>Su di me</h2>
