@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@section('abbraccio')
+<x-layout>
     <div class="row">
         <div class="leftcolumn">
             <div class="card">
@@ -19,4 +18,4 @@
             </div>
         </div>
     </div>    
-@endsection
+</x-layout>

@@ -10,11 +10,12 @@
     <title>{{$title ?? ""}}</title>
 </head>
 <body>
-    
-    <x-navbar/>
-    {{-- variabile segna posto--}}
-    {{$slot}}
 
+    <x-nav/>     <!-- // tag che nasce e muore, quindi tag conclusivo. -->
+    {{-- variabile segna posto --}}
+    {{ $slot }}
+
+    <x-footer/>
 
     <script src="{{asset("js/app.js")}}"></script>
 </body>

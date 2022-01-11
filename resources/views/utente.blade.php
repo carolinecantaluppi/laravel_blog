@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@section('abbraccio')
+<x-layout>
     <div class="row mt-5">
         <div class="col-12">
             <h1>Ciao {{$user['name']}} {{$user['lastname']}}</h1>
@@ -24,4 +23,4 @@
             </div>
         </div>
     </div>    
-@endsection
+</x-layout>

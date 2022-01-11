@@ -1,10 +1,12 @@
-@extends('layouts.app')
-@section('abbraccio')
+<x-layout>
+    <x-slot name="title">Dettaglio</x-slot>
+
     <div class="row mt-5">
         <div class="col-12">
             <h1>Utenti nel dettaglio</h1>
         </div>
     </div>
+    
     <div class="row">
         @forelse($users as $user)
         <div class="col-md-4">
@@ -28,4 +30,4 @@
             <h2>Non ci sono utenti.</h2>
         @endforelse
     </div>
-@endsection
+</x-layout>

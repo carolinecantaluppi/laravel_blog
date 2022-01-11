@@ -1,4 +1,5 @@
-<x-layout>
+@extends('layouts.app')
+@section('abbraccio')
 
     <x-slot name="title">Homepage</x-slot>
     
@@ -35,5 +36,5 @@
             </div>
         </div>
     </div>
-</x-layout>
+@endsection
     

@@ -1,4 +1,4 @@
-
+<!-- <x-layout>  così ho encapsulato tutto il mio body all'interno di questo tag che fa riferimento a layout.blade.php -->
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -27,3 +27,4 @@
             </div>
         </div>
     </nav>
+<!-- </x-layout> -->
