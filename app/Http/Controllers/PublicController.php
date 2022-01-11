@@ -32,4 +32,21 @@ class PublicController extends Controller
         
     }
 
+    public function contact(){
+        return view('contact');
+    }
+
+    public function submit(StoreRequest $request){      // Dependency Injection
+        dd($request);
+
+        $email=$request->input("email");
+        $name=$request->input("name");
+        $message=$request->input("message");
+        $contact= compact("name", "message");
+        $admin_mail= compact("email", "name", "message");
+        Mail::to($email)->send(new ContactMail($contact));
+        Mail::to("admin@admin.it")->send(new AdminMail($admin_mail));
+
+        return redirect(route("home"))->with('message', 'Grazie per averci scritto. Il tuo messaggio è arrivato');
+    }
 }

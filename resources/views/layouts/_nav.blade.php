@@ -20,6 +20,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('utenti')}}">Utenti</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('contact')}}">Contattaci</a>
+                    </li>
                 </ul>
             </div>
         </div>

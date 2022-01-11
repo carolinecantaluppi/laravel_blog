@@ -33,5 +33,5 @@ Route::get('/utenti', [PublicController::class, "utenti"])->name('utenti');
 Route::get('/utente/{key}', [UtenteController::class, "key"])->where('key', '[0-9]+')->name('utente');        // accetta solo lettere.
 
 // pagina dei contatti
-// Route::get('/contact', [PublicController::class, "$contact"])->name('contact');
+Route::get('/contact', [PublicController::class, "contact"])->name('contact');
 
