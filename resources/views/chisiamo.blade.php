@@ -2,7 +2,7 @@
     <div class="row">
         <div class="leftcolumn">
             <div class="card">
-                <h2>Su di me</h2>
+                <h2>Chi siamo</h2>
                 <div class="fakeimg" style="height:100px;">Imagine</div>
                 <p>testo su di me in culpa qui officia deserunt mollit anim..</p>
             </div>

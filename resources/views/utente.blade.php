@@ -4,6 +4,7 @@
             <h1>Ciao {{$user['name']}} {{$user['lastname']}}</h1>
         </div>
     </div>
+
     <div class="row mt-5">
         <div class="leftcolumn">
             <div class="card">

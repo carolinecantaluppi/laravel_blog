@@ -36,12 +36,13 @@ class PublicController extends Controller
         return view('contact');
     }
 
-    public function submit(StoreRequest $request){      // Dependency Injection
-        dd($request);
+    public function submit(Request $request){      // Dependency Injection
+        //dd($request->all);
 
-        $email=$request->input("email");
-        $name=$request->input("name");
-        $message=$request->input("message");
+        $email=$request->input("email");        // in input avrai la mia mail.
+        $name=$request->input("name");          // in input avrai il mio nome.
+        $message=$request->input("message");    // in input avrai il mio messaggio.
+        //dd($email, $name, $message);
         $contact= compact("name", "message");
         $admin_mail= compact("email", "name", "message");
         Mail::to($email)->send(new ContactMail($contact));

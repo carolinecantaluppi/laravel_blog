@@ -34,5 +34,5 @@ Route::get('/utente/{key}', [UtenteController::class, "key"])->where('key', '[0-
 
 // pagina dei contatti
 Route::get('/contact', [PublicController::class, "contact"])->name('contact');
-Rout::post("/contact/submit", [PublicController::class, "submit"])->name("submit");
+Route::post("/contact/submit", [PublicController::class, "submit"])->name("submit");
 
