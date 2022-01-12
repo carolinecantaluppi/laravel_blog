@@ -2,12 +2,12 @@
     <x-slot name="title">Dettaglio</x-slot>
 
     <div class="row mt-5">
-        <div class="col-12">
+        <div class="col-12 text-center">
             <h1>Utenti nel dettaglio</h1>
         </div>
     </div>
     
-    <div class="row">
+    <div class="row mt-5 justify-content-center">
         @forelse($users as $user)
         <div class="col-md-4">
             <div class="card" style="width: 18rem;">

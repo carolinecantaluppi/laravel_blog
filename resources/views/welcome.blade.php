@@ -2,7 +2,7 @@
 
     <x-slot name="title">Homepage</x-slot>
     
-    <div class="row">
+    <div class="row mt-5">
         <div class="leftcolumn">
             <div class="card">
                 <h2>TITOLO</h2>
