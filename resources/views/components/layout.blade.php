@@ -12,8 +12,8 @@
 <body>
 
     <x-nav/>     <!-- // tag che nasce e muore, quindi tag conclusivo. -->
-    {{-- variabile segna posto --}}
-    {{ $slot }}
+    
+    {{ $slot }}     {{-- variabile segna posto --}}
 
     <x-footer/>
 

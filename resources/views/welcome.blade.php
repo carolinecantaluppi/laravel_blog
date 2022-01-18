@@ -2,6 +2,14 @@
 
     <x-slot name="title">Homepage</x-slot>
     
+    <div class="row mt-5">              <!--  significa:  -->
+        @if (session('message'))         <!-- se in sezzione ti arriva un messaggio -->
+            <div class="alert alert-success text-center">        <!-- passami un div verde di alerta -->
+                {{ session('message') }}         <!-- con questo messaggio. -->
+            </div>
+        @endif
+    </div>
+    
     <div class="row mt-5">
         <div class="leftcolumn">
             <div class="card">

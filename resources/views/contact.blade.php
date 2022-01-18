@@ -3,6 +3,19 @@
     <div class=" mt-5 justify-content-center text-center">
         <h1>Contattaci</h1>
     </div>
+
+    <div class="row">
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif  
+    </div>
+
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
