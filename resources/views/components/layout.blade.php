@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <x-nav/>     <!-- // tag che nasce e muore, quindi tag conclusivo. -->
+    <x-nav/>    {{-- tag che nasce e muore, quindi tag conclusivo.  --}}
     
     {{ $slot }}     {{-- variabile segna posto --}}
 

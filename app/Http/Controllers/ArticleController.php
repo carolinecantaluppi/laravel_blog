@@ -1,5 +1,8 @@
 <?php
 
+// CRUD: create, read, update, delete.
+
+
 namespace App\Http\Controllers;
 
 use App\Models\Article;
