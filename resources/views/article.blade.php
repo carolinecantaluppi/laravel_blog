@@ -25,7 +25,7 @@
                         <label for="exampleInputText" class="form-label">Descrizione dell'articolo</label>
                         <textarea name="body" class="form-control" rows="3"></textarea>
                     </div>
-                    <div class=" mt-5 mx-auto">
+                    <div class=" mt-5 col-4 mx-auto">
                         <button type="submit" class="btn btn-primary">Invia Articolo</button>
                     </div>
                 </form>
@@ -39,7 +39,9 @@
                 <div class="card" style="width: 18rem;">
                     <img src="{{Storage::url($article->img)}}" class="card-img-top" alt="...">     <!-- collegare l'immagine dello storage con la cartella public usando il commando nell terminale: php artisan storage:link. -->
                     <div class="card-body">
-                        <h5 class="card-title">{{$article['title']}}</h5>  <!-- fa un echo di htmlspecialchar($variabilechevogliostampare). -->
+                        <h5 class="card-title">{{$article['title']}}</h5>  {{-- fa un echo di htmlspecialchar($variabilechevogliostampare). --}}
+                        {{-- SOTTO: per vedere il nome dello utente che ha creato l'articolo --}}
+                        <h6>{{$article->user['name']}}</h6>   {{-- come è un'array (user), quindi bisogna mettere user['name']. Se fosse un'oggetto come dell'insegnante, se faceva soltando user->name. --}}
                         <p class="card-text">{{$article['body']}}
                             @if ($loop->first)
                             This is the first iteration.
@@ -48,7 +50,17 @@
                             This is the last iteration.
                             @endif
                         </p>
-                        <a href="{{route('utente', ['key'=>$loop->index])}}" class="btn btn-primary">Vai al dettaglio</a>
+                        <div class="btn-group btn-group-sm col-4 mx-auto">
+                            <a href="{{route('article', ['key'=>$loop->index])}}" class="btn btn-primary">Dettaglio</a>
+                            @if ($article->user['id'] === Auth::id())                            
+                                <a href="{{route('article.update', compact('article'))}}" class="btn btn-warning">Modifica</a>   {{-- con il COMPACT passo i dati di una pagina (nel caso, della pagina article per poter modificarli.)--}}
+                                <form method="POST" action="{{route('article.delete', compact('article'))}}">
+                                    @csrf
+                                    @method('delete')
+                                    <button type="submit" class="btn btn-danger">Elimina</button>
+                                </form>
+                            @endif
+                        </div>
                     </div>
                 </div>
             </div>  

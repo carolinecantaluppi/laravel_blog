@@ -25,8 +25,8 @@
                         <label for="exampleInputText" class="form-label">Descrizione dell'utente</label>
                         <textarea name="body" class="form-control" rows="3"></textarea>
                     </div>
-                    <div class=" mt-5 mx-auto">
-                        <button type="submit" class="btn btn-primary">Invia</button>
+                    <div class=" mt-5">
+                        <button type="submit" class="btn btn-primary col-4 mx-auto">Invia</button>
                     </div>
                 </form>
             </div>
@@ -48,7 +48,7 @@
                             This is the last iteration.
                             @endif
                         </p>
-                        <a href="{{route('utente', ['key'=>$loop->index])}}" class="btn btn-primary">Vai al dettaglio</a>
+                        <a href="{{route('utente', ['key'=>$loop->index])}}" class="btn btn-primary col-8 mx-auto">Dettaglio</a>
                     </div>
                 </div>
             </div>  

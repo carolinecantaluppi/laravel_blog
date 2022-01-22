@@ -14,14 +14,14 @@ class CreateArticlesTable extends Migration
     public function up()
     {
         Schema::create('articles', function (Blueprint $table) {
-            $table->id();
+            $table->id();   // Chiave Primaria della tabella articles  - deve esistere sempre.
             $table->string('title');
             $table->text('body');
             $table->string('img');
             $table->timestamps();
         });
     }
-
+    
     /**
      * Reverse the migrations.
      *

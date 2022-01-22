@@ -14,7 +14,7 @@ class CreateArticleExemplosTable extends Migration
     public function up()
     {
         Schema::create('article_exemplos', function (Blueprint $table) {
-            $table->id();
+            $table->id();       
             $table->timestamps();
         });
     }

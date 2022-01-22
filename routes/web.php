@@ -28,7 +28,6 @@ Route::get('/chi-siamo', [PublicController::class, "chiSiamo"])->name('chi-siamo
 Route::get('/dove-siamo', [PublicController::class, "doveSiamo"])->name('dove-siamo');
 
 Route::get('/utenti', [UtenteController::class, "utenti"])->name('utenti');
-
 Route::get('/utente/{key}', [UtenteController::class, "key"])->where('key', '[0-9]+')->name('utente');        // accetta solo lettere.
 
 // pagina dei contatti
@@ -38,4 +37,6 @@ Route::post("/contact/submit", [PublicController::class, "submit"])->name("submi
 // pagina articoli
 Route::get('/article', [ArticleController::class, "article"])->name('article');
 Route::post('/article/store', [ArticleController::class, "articleStore"])->name("article.store");
-
+Route::get('/article/update/{article}', [ArticleController::class, 'update'])->name('article.update');
+Route::put('/article/{article}/edit', [ArticleController::class, 'edit'])->name('article.edit');
+Route::delete('/article/{article}/delete', [ArticleController::class, 'destroy'])->name('article.delete');

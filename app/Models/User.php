@@ -2,11 +2,12 @@
 
 namespace App\Models;
 
+use App\Models\Article;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
@@ -41,4 +42,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // un utente ha più articoli.
+    public function articles(){
+       return $this->hasMany(Article::class); // tutti l'oggetto che sono stati creati con l'oggetto user avranno molti articoli, facendo riferimento al modello article.
+    }   // Documentazione Laravel: Sezione Eloquent ORM -> Relationships -> Defining Relationships.
 }

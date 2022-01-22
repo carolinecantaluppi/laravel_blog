@@ -22,7 +22,7 @@
                 <form method="POST" action="{{route("submit")}}">
                     @csrf       {{-- è un token di protezione per sapere a chi fa riferimento (la richiesta). --}}
                     <div class="mb-3 mt-5">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" name="email">  {{-- (name="email")dando dei nome all'input per sapere come uttilizzare, come gestire. --}}
                     </div>
                     <div class="mb-3">
